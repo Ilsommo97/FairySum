@@ -1,9 +1,5 @@
 import os
 
-PATH_FAIRY_TALES =   './FAIRY_TALE/texts/'
-PATH_SHORT_STORIES = './SHORT_STORY/texts/'
-
-
 def extract_id(filename: str):
   """
   A simple helper function to extract the id from each text filename
@@ -34,5 +30,6 @@ def createDictionary(path: str):
       
   return dictionary
 
-FtDictionary = createDictionary(PATH_FAIRY_TALES)
-SsDictionary = createDictionary(PATH_SHORT_STORIES)
+
+
+
