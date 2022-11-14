@@ -4,14 +4,8 @@ def extract_id(filename: str):
   """
   A simple helper function to extract the id from each text filename
   """
-  first_underscore = False
-  id = ''
-  for char in filename:
-    if char == '_':
-      if first_underscore == True:
-        break
-      first_underscore = True
-    id = id + char
+  size = len(filename)
+  id = filename[:size - 4]   # This line of code will remove the last four charachters i.e .txt
   return id
 
 
